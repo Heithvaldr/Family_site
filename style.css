@@ -1,0 +1,131 @@
+@font-face {
+    font-family: batmfa;
+    src: url(fonts/batmfa__.ttf);
+}
+@font-face {
+    font-family: batmfo;
+    src: url(fonts/batmfo__.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    height: 768px;
+}
+header {
+    position: relative;
+    height: 150px;
+    background-color: black;
+}
+nav{
+    height: 100%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+nav li {
+    display: inline-block;
+    margin: 43px 0px 43px 50px;
+}
+nav a {
+    font-family: batmfa, sans-serif;
+    color: white;
+}
+nav li p {
+    margin: 24px 0 24px 8px;
+    float: right;
+}
+nav li div {
+    height: 64px;
+    width: 64px;
+    display: inline;
+}
+.batman_button {
+    float: left;
+    background-image: url(image/batman_button.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.portfolio_button {
+    float: left;
+    background-image: url(image/portfolio_button.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.random_button {
+    float: left;
+    background-image: url(image/random_button.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.contacts_button {
+    float: left;
+    background-image: url(image/contacts_button.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+li:hover p{
+    color: #fcf02f;
+} 
+li:hover .batman_button {
+    background-image: url(image/batman_button_hover.png);
+}
+li:hover .portfolio_button {
+    background-image: url(image/portfolio_button_hover.png);
+}
+li:hover .random_button {
+    background-image: url(image/random_button_hover.png);
+}
+li:hover .contacts_button {
+    background-image: url(image/contacts_button_hover.png);
+}
+section {
+    border: solid 3px black;
+    height: 100%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.harley_quin {
+    width: 50%;
+    height: 100%;
+    background-image: url(image/harley_background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    float: left;
+}
+.bruce_wayne {
+    width: 50%;
+    height: 100%;
+    background-image: url(image/batman_background.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    float: right;
+}
+.bruce_wayne:hover {
+    background-image: url(image/batman_background_invert.png);
+}
+.harley_quin:hover {
+    background-image: url(image/harley_background_invert.png);
+}
+.slash_line {
+    -ms-transform: skew(-4deg); 
+    -webkit-transform: skew(-4deg);
+    transform: skew(-4deg);
+    position: absolute;
+    height: 768px;
+    border: solid black 3px;
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 31%;
+    margin-left: 34.5%;
+    margin-right: 34.5%;
+}
